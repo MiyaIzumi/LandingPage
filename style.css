@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    font-family: "Poppins";
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 15px 0;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
+}
+.landing .fas{
+    font-size: 20px;
+    color: white;
+}
+.brand{
+    display: flex;
+    align-items: center;
+}
+.brand h1{
+    font-size: 2em;
+    color: white;
+    margin-right: 10%;
+}
+.fas.fa-moon{
+    font-size: 0.8rem;
+    border-radius: 100%;
+    padding: 8px;
+    color: black;
+    background-color: rgba(123, 104, 231, 0.78);
+}
+.fas.fa-sun{
+    font-size: 0.8rem;
+    border-radius: 100%;
+    padding: 8px;
+    color: black;
+    background-color: rgba(123, 104, 231, 0.78);
+}
+.nav-lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    position:absolute;
+    right: 0px;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(73, 55, 172, 0.78);
+    width: 0%;
+    transition: 0.1s ease;
+    display: none;
+}
+.nav-lists li{
+    display: none;
+    padding-bottom: 5%;
+}
+.nav-lists li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #454545;
+    mix-blend-mode: overlay;
+    width: 100%;
+    height: 100%;
+}
+.head{
+    position: relative;
+    width: 90%;
+    margin: 15% 5% 10% 5%;
+    padding: 15px auto;
+}
+.head h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    color: whitesmoke;
+    margin-bottom: 2%;
+}
+.head p{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    width: 30%;
+    font-family: "Rancho";
+    line-height: 1.1;
+    margin-bottom: 2%;
+}
+.head .btn{
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(102, 51, 153, 0.78);
+    border-radius: 5px;
+}
+/* .about{
+    position: relative;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding-top: 10%;
+} */
+
+@media screen and (max-width:786px) {
+    .nav-lists li a{
+        font-size: 0.8rem;
+    }
+    .nav-lists li{
+        padding-bottom: 10%;
+    }
+    .head h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:414px) {
+    .head p{
+        font-size: 1rem;
+        margin-bottom: 4%;
+    }
+    .head{
+        margin-top: 50%;
+        margin-bottom: 40%;
+    }
+    .head .btn{
+        font-size: 1rem;
+    }
+}
